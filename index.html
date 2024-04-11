@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignQA Benchmark</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>DesignQA: A Multimodal Benchmark for Evaluating Large Language Models’ Understanding of Engineering
+            Documentation</h1>
+        <p class="authors">Anna C. Doris<sup>1,*</sup>, Daniele Grandi<sup>2</sup>, Ryan Tomich<sup>3</sup>, Md Ferdous
+            Alam<sup>1</sup>, Hyunmin Cheong<sup>4</sup>, Faez Ahmed<sup>1</sup></p>
+        <p class="affiliations"><sup>1</sup>Massachusetts Institute of Technology, Cambridge, MA<br>
+            <sup>2</sup>Autodesk Research, San Francisco, CA<br>
+            <sup>3</sup>MIT Motorsports, Cambridge, MA<br>
+            <sup>4</sup>Autodesk Research, Toronto, ON, Canada
+        </p>
+
+        <div class="logo-container">
+            <img src="public/images/mit-logo.png" alt="MIT Logo">
+            <img src="public/images/autodesk-logo.png" alt="Autodesk Logo">
+        </div>
+
+        <div class="buttons">
+            <button><span role="img" aria-label="Paper">📄</span> Paper</button>
+            <button><span role="img" aria-label="Code">💻</span> Code</button>
+            <button><span role="img" aria-label="Data">📊</span> Data</button>
+            <button id="leaderboardButton"><span role="img" aria-label="Leaderboard">🏆</span> Leaderboard</button>
+
+        </div>
+
+        <div class="description">
+            <p>DesignQA is a novel benchmark aimed at evaluating the proficiency of multimodal large language models in
+                comprehending and applying engineering requirements in technical documentation. Developed with a focus
+                on real-world engineering challenges, DesignQA uniquely combines multimodal data—including textual
+                design requirements, CAD images, and engineering drawings—derived from the Formula SAE student
+                competition.
+        </div>
+        <img src="public/images/design_qa_overview.png" alt="DesignQA Overview">
+
+        <div class="table-container" id="leaderboardStart">
+            <h2>Extraction</h2>
+            <table id="extractionTable" class="display">
+                <thead>
+                    <tr>
+                        <th>Model Name</th>
+                        <th>Retrieval (F1 BoW)</th>
+                        <th>Compilation (F1 rules)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <h2>Comprehension</h2>
+            <table id="comprehensionTable" class="display">
+                <thead>
+                    <tr>
+                        <th>Model Name</th>
+                        <th>Definition (F1 BoC)</th>
+                        <th>Presence (ACC)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <h2>Compliance</h2>
+            <table id="complianceTable" class="display">
+                <thead>
+                    <tr>
+                        <th>Model Name</th>
+                        <th>Dimension (ACC)</th>
+                        <th>Dimension (Bleu)</th>
+                        <th>Dimension (Rouge)</th>
+                        <th>Functional Performance (ACC)</th>
+                        <th>Functional Performance (Bleu)</th>
+                        <th>Functional Performance (Rouge)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

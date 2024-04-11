@@ -1,0 +1,137 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.logo-container {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    margin: 0 50px;
+    max-width: 300px;
+    height: auto;
+}
+
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.authors,
+.affiliations {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #4CAF50;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 5px;
+        border-radius: 20px;
+    }
+
+    .description {
+        padding: 15px;
+        margin: 20px auto;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.description {
+    font-size: 18px;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 40px auto;
+    text-align: justify;
+    line-height: 1.8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+
+.table-container {
+    margin: 20px auto;
+    width: 100%;
+    overflow-x: auto;
+}
+
+table.display {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table.display th,
+table.display td {
+    text-align: left;
+    padding: 8px;
+}
+
+table.display th {
+    background-color: #8c8c8c;
+    color: white;
+}
+
+table.display tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+    /* margin-top: 20px; */
+    margin-bottom: 2px;
+}

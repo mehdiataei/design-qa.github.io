@@ -1,0 +1,14 @@
+{
+  "extraction": [
+    {"modelName": "Model A", "retrievalF1BoW": "0.82", "compilationF1Rules": "0.76"},
+    {"modelName": "Model B", "retrievalF1BoW": "0.85", "compilationF1Rules": "0.79"}
+  ],
+  "comprehension": [
+    {"modelName": "Model A", "definitionF1BoC": "0.88", "presenceACC": "0.93"},
+    {"modelName": "Model B", "definitionF1BoC": "0.90", "presenceACC": "0.95"}
+  ],
+  "compliance": [
+    {"modelName": "Model A", "dimensionACC": "0.79", "dimensionBleu": "0.84", "dimensionRouge": "0.81", "functionalPerformanceACC": "0.75", "functionalPerformanceBleu": "0.78", "functionalPerformanceRouge": "0.80"},
+    {"modelName": "Model B", "dimensionACC": "0.82", "dimensionBleu": "0.86", "dimensionRouge": "0.83", "functionalPerformanceACC": "0.77", "functionalPerformanceBleu": "0.79", "functionalPerformanceRouge": "0.81"}
+  ]
+}
