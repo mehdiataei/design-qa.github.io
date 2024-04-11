@@ -28,6 +28,13 @@ html {
 }
 
 
+@media (max-width: 768px) {
+    .logo-container img {
+        max-width: 150px;
+        margin: 0 5px;
+    }
+}
+
 h1 {
     font-size: 30px;
     margin-bottom: 10px;
@@ -78,6 +85,7 @@ button:hover {
         margin: 20px auto;
     }
 }
+
 
 img {
     max-width: 100%;
