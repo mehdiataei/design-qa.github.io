@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('.buttons button');
     const links = {
-        'Paper': '#', // @annie please update this link
+        'Paper': 'https://arxiv.org/abs/2404.07917', // @annie please update this link
         'Code': 'https://github.com/anniedoris/design_qa/',
         'Data': '#', // @annie please update this link
     };
