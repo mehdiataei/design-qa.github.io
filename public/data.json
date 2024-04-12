@@ -1,14 +1,22 @@
 {
   "extraction": [
-    {"modelName": "Model A", "retrievalF1BoW": "0.82", "compilationF1Rules": "0.76"},
-    {"modelName": "Model B", "retrievalF1BoW": "0.85", "compilationF1Rules": "0.79"}
+      {"modelName": "Naive", "retrievalF1BoW": "0.082", "compilationF1Rules": "0.137"},
+      {"modelName": "GPT4-AllRules", "retrievalF1BoW": "0.750", "compilationF1Rules": "0.298"},
+      {"modelName": "GPT4-RAG", "retrievalF1BoW": "0.181", "compilationF1Rules": "0.362"},
+      {"modelName": "LLaVA-RAG", "retrievalF1BoW": "0.112", "compilationF1Rules": "0.281"}
   ],
   "comprehension": [
-    {"modelName": "Model A", "definitionF1BoC": "0.88", "presenceACC": "0.93"},
-    {"modelName": "Model B", "definitionF1BoC": "0.90", "presenceACC": "0.95"}
+      {"modelName": "Naive", "definitionF1BoC": "0.358", "presenceACC": "0.5"},
+      {"modelName": "GPT4-AllRules", "definitionF1BoC": "0.470", "presenceACC": "0.629"},
+      {"modelName": "GPT4-RAG", "definitionF1BoC": "N/A", "presenceACC": "0.532"},
+      {"modelName": "GPT4-NoRules", "definitionF1BoC": "0.420", "presenceACC": "N/A"},
+      {"modelName": "LLaVA-RAG", "definitionF1BoC": "N/A", "presenceACC": "0.484"},
+      {"modelName": "LLaVA-NoRules", "definitionF1BoC": "0.393", "presenceACC": "N/A"}
   ],
   "compliance": [
-    {"modelName": "Model A", "dimensionACC": "0.79", "dimensionBleu": "0.84", "dimensionRouge": "0.81", "functionalPerformanceACC": "0.75", "functionalPerformanceBleu": "0.78", "functionalPerformanceRouge": "0.80"},
-    {"modelName": "Model B", "dimensionACC": "0.82", "dimensionBleu": "0.86", "dimensionRouge": "0.83", "functionalPerformanceACC": "0.77", "functionalPerformanceBleu": "0.79", "functionalPerformanceRouge": "0.81"}
+      {"modelName": "Naive", "dimensionACC": "0.5", "dimensionBleu": "N/A", "dimensionRouge": "N/A", "functionalPerformanceACC": "0.5", "functionalPerformanceBleu": "N/A", "functionalPerformanceRouge": "N/A"},
+      {"modelName": "GPT4-AllRules", "dimensionACC": "0.533", "dimensionBleu": "0.118", "dimensionRouge": "0.296", "functionalPerformanceACC": "0.563", "functionalPerformanceBleu": "0.167", "functionalPerformanceRouge": "0.342"},
+      {"modelName": "GPT4-RAG", "dimensionACC": "0.300", "dimensionBleu": "0.091", "dimensionRouge": "0.235", "functionalPerformanceACC": "0.563", "functionalPerformanceBleu": "0.121", "functionalPerformanceRouge": "0.306"},
+      {"modelName": "LLaVA-RAG", "dimensionACC": "0.408", "dimensionBleu": "0.097", "dimensionRouge": "0.241", "functionalPerformanceACC": "0.536", "functionalPerformanceBleu": "0.163", "functionalPerformanceRouge": "0.321"}
   ]
 }
