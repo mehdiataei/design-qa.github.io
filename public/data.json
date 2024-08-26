@@ -1,27 +1,33 @@
 {
-  "extraction": [
+    "extraction": [
       {"modelName": "Naive", "retrievalF1BoW": "0.082", "compilationF1Rules": "0.137"},
       {"modelName": "GPT-4-AllRules", "retrievalF1BoW": "0.750", "compilationF1Rules": "0.298"},
       {"modelName": "GPT-4-RAG", "retrievalF1BoW": "0.181", "compilationF1Rules": "0.362"},
       {"modelName": "LLaVA-1.5-RAG", "retrievalF1BoW": "0.112", "compilationF1Rules": "0.281"},
       {"modelName": "Gemini-1.0-RAG", "retrievalF1BoW": "0 (Failure)", "compilationF1Rules": "0.283"},
-      {"modelName": "Claude-Opus-RAG", "retrievalF1BoW": "0.173", "compilationF1Rules": "0.288"}
-  
-  ],
-  "comprehension": [
+      {"modelName": "Claude-Opus-RAG", "retrievalF1BoW": "0.173", "compilationF1Rules": "0.288"},
+      {"modelName": "GPT-4o-AllRules", "retrievalF1BoW": "0.881", "compilationF1Rules": "0.424"},
+      {"modelName": "GPT-4o-RAG", "retrievalF1BoW": "0.185", "compilationF1Rules": "0.376"}
+    ],
+    "comprehension": [
       {"modelName": "Naive", "definitionF1BoC": "0.358", "presenceACC": "0.5"},
       {"modelName": "GPT-4-AllRules", "definitionF1BoC": "0.470", "presenceACC": "0.629"},
       {"modelName": "GPT-4-RAG", "definitionF1BoC": "0.420", "presenceACC": "0.532"},
       {"modelName": "LLaVA-1.5-RAG", "definitionF1BoC": "0.393", "presenceACC": "0.484"},
       {"modelName": "Gemini-1.0-RAG", "definitionF1BoC": "0.488", "presenceACC": "0.548"},
-      {"modelName": "Claude-Opus-RAG", "definitionF1BoC": "0.423", "presenceACC": "0.500"}
-  ],
-  "compliance": [
+      {"modelName": "Claude-Opus-RAG", "definitionF1BoC": "0.423", "presenceACC": "0.500"},
+      {"modelName": "GPT-4o-AllRules", "definitionF1BoC": "0.540", "presenceACC": "0.726"},
+      {"modelName": "GPT-4o-RAG", "definitionF1BoC": "0.525", "presenceACC": "0.710"}
+    ],
+    "compliance": [
       {"modelName": "Naive", "dimensionACC": "0.500", "dimensionBleu": "N/A", "dimensionRouge": "N/A", "functionalPerformanceACC": "0.5", "functionalPerformanceBleu": "N/A", "functionalPerformanceRouge": "N/A"},
       {"modelName": "GPT-4-AllRules", "dimensionACC": "0.533", "dimensionBleu": "0.118", "dimensionRouge": "0.296", "functionalPerformanceACC": "0.563", "functionalPerformanceBleu": "0.167", "functionalPerformanceRouge": "0.342"},
       {"modelName": "GPT-4-RAG", "dimensionACC": "0.300", "dimensionBleu": "0.091", "dimensionRouge": "0.235", "functionalPerformanceACC": "0.563", "functionalPerformanceBleu": "0.121", "functionalPerformanceRouge": "0.306"},
       {"modelName": "LLaVA-1.5-RAG", "dimensionACC": "0.408", "dimensionBleu": "0.097", "dimensionRouge": "0.241", "functionalPerformanceACC": "0.536", "functionalPerformanceBleu": "0.163", "functionalPerformanceRouge": "0.321"},
       {"modelName": "Gemini-1.0-RAG", "dimensionACC": "0.525", "dimensionBleu": "0.176", "dimensionRouge": "0.344", "functionalPerformanceACC": "0.438", "functionalPerformanceBleu": "0.266", "functionalPerformanceRouge": "0.444"},
-      {"modelName": "Claude-Opus-RAG", "dimensionACC": "0.508", "dimensionBleu": "0.137", "dimensionRouge": "0.295", "functionalPerformanceACC": "0.875", "functionalPerformanceBleu": "0.172", "functionalPerformanceRouge": "0.354"}
-  ]
-}
+      {"modelName": "Claude-Opus-RAG", "dimensionACC": "0.508", "dimensionBleu": "0.137", "dimensionRouge": "0.295", "functionalPerformanceACC": "0.875", "functionalPerformanceBleu": "0.172", "functionalPerformanceRouge": "0.354"},
+      {"modelName": "GPT-4o-AllRules", "dimensionACC": "0.825", "dimensionBleu": "0.175", "dimensionRouge": "0.344", "functionalPerformanceACC": "0.938", "functionalPerformanceBleu": "0.230", "functionalPerformanceRouge": "0.408"},
+      {"modelName": "GPT-4o-RAG", "dimensionACC": "0.675", "dimensionBleu": "0.111", "dimensionRouge": "0.255", "functionalPerformanceACC": "0.750", "functionalPerformanceBleu": "0.181", "functionalPerformanceRouge": "0.367"}
+    ]
+  }
+  
