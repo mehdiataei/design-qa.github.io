@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DesignQA Benchmark</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -47,51 +45,20 @@
 
         <div class="table-container" id="leaderboardStart">
             <h2>Extraction</h2>
-            <table id="extractionTable" class="display">
-                <thead>
-                    <tr>
-                        <th>Model Name</th>
-                        <th>Retrieval (F1 BoW)</th>
-                        <th>Compilation (F1 rules)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+            <table id="extractionTable" class="modern-table"></table>
+            <canvas id="extractionChart"></canvas>
         </div>
 
         <div class="table-container">
             <h2>Comprehension</h2>
-            <table id="comprehensionTable" class="display">
-                <thead>
-                    <tr>
-                        <th>Model Name</th>
-                        <th>Definition (F1 BoC)</th>
-                        <th>Presence (ACC)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+            <table id="comprehensionTable" class="modern-table"></table>
+            <canvas id="comprehensionChart"></canvas>
         </div>
 
         <div class="table-container">
             <h2>Compliance</h2>
-            <table id="complianceTable" class="display">
-                <thead>
-                    <tr>
-                        <th>Model Name</th>
-                        <th>Dimension (ACC)</th>
-                        <th>Dimension (Bleu)</th>
-                        <th>Dimension (Rouge)</th>
-                        <th>Functional Performance (ACC)</th>
-                        <th>Functional Performance (Bleu)</th>
-                        <th>Functional Performance (Rouge)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+            <table id="complianceTable" class="modern-table"></table>
+            <canvas id="complianceChart"></canvas>
         </div>
 
     </div>
